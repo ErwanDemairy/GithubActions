@@ -1,7 +1,7 @@
 name: CardChanges
 on:
-  project_card:
-      types: [moved]
+  issues:
+      types: [opened, edited, milestoned]
 
 jobs:
   notify:
