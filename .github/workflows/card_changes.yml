@@ -1,0 +1,12 @@
+name: CardChanges
+on:
+  project_card:
+      types: [moved]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+        - run: echo "Moving a card"
+        - uses: jenschelkopf/project-card-moved-notification@1.0
+
