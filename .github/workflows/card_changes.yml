@@ -1,7 +1,7 @@
 name: CardChanges
 on:
   project_card:
-      types: [moved]
+      types: [created,moved,converted,edited,deleted]
 
 jobs:
   notify:
